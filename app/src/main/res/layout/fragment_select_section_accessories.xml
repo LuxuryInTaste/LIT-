@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <ImageView
+        android:id="@+id/HomeIcon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/home1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivSettings"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/img_1"
+    app:layout_constraintStart_toEndOf="@+id/HomeIcon"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="58dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/img_4"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="363dp"
+        android:layout_height="379dp"
+        android:layout_margin="16dp"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo"
+        app:rowCount="2">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/shoesIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:background="#000000"
+            >
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1.5dp"
+            android:background="#000000"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="Shoes"
+                    android:foreground="#7A232323"
+                    android:scaleType="centerCrop"
+
+                    android:src="@drawable/shoes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="8dp"
+                    android:text="Shoes"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/clothingIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:background="#000000"
+            >
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1.5dp"
+            android:background="#000000"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:foreground="#7A232323"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="Clothing"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/clothing" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="8dp"
+                    android:text="Clothing"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+        <!-- Bags -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bagsIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:background="#000000"
+            >
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1.5dp"
+            android:background="#000000"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:foreground="#7A232323"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="Bags"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bags" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="8dp"
+                    android:text="Bags"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+        <!-- Accessories -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/AccessoriesIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:background="#000000"
+            >
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1.5dp"
+            android:background="#000000"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:foreground="#7A232323"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="Accessories"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/accesories" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="8dp"
+                    android:text="Accessories"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+    </androidx.gridlayout.widget.GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

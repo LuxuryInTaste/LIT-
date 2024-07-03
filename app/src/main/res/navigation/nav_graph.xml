@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signupPage">
+
+    <fragment
+        android:id="@+id/signupPage"
+        android:name="com.example.luxuryintaste.login_signup_fragments.SignupPage"
+        android:label="SignupPage" >
+        <action
+            android:id="@+id/action_signupPage_to_loginPage"
+            app:destination="@id/loginPage" />
+        <action
+            android:id="@+id/action_signupPage_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginPage"
+        android:name="com.example.luxuryintaste.login_signup_fragments.LoginPage"
+        android:label="LoginPage" >
+        <action
+            android:id="@+id/action_loginPage_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.luxuryintaste.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_choice_sectionFragment"
+            app:destination="@id/choice_sectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/select_Section_AccessoriesFragment"
+        android:name="com.example.luxuryintaste.Select_Section_AccessoriesFragment"
+        android:label="Select_Section_AccessoriesFragment" >
+        <action
+            android:id="@+id/action_select_Section_AccessoriesFragment_to_buy_lives_hint_sectionFragment"
+            app:destination="@id/buy_lives_hint_sectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buy_lives_hint_sectionFragment"
+        android:name="com.example.luxuryintaste.Buy_lives_hint_sectionFragment"
+        android:label="Buy_lives_hint_sectionFragment" />
+    <fragment
+        android:id="@+id/choice_sectionFragment"
+        android:name="com.example.luxuryintaste.Choice_sectionFragment"
+        android:label="Choice_sectionFragment" >
+        <action
+            android:id="@+id/action_choice_sectionFragment_to_select_Section_AccessoriesFragment"
+            app:destination="@id/select_Section_AccessoriesFragment" />
+        <action
+            android:id="@+id/action_choice_sectionFragment_to_select_Section_AccessoriesFragment2"
+            app:destination="@id/select_Section_AccessoriesFragment" />
+    </fragment>
+</navigation>

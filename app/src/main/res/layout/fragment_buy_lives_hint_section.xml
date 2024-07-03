@@ -1,0 +1,225 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <!-- Top Icons -->
+    <ImageView
+        android:id="@+id/HomeIcon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/home1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/ivSettings"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/img_1"
+        app:layout_constraintStart_toEndOf="@+id/HomeIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="58dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/img_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:paddingEnd="5dp"
+        android:id="@+id/points_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/curve"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo">
+
+        <TextView
+            android:paddingEnd="20dp"
+            android:paddingVertical="4dp"
+            android:paddingStart="10dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/points_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/smoked_white"
+
+            android:text="Points"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/points_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="123"
+            android:paddingHorizontal="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lives_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curve"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/points_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/points_layout">
+
+        <TextView
+            android:id="@+id/lives_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/smoked_white"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="20dp"
+            android:text="Lives"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/lives_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:paddingHorizontal="10dp"
+            android:text="❤❤❤"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hint_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/curve"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="2dp"
+        app:layout_constraintStart_toStartOf="@+id/points_layout"
+        app:layout_constraintTop_toBottomOf="@id/points_layout">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/hint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hint"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/jacket1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/smoked_white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/jacket"
+        app:layout_constraintEnd_toStartOf="@id/jacket2"
+        app:layout_constraintHeight_percent="0.45"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hint_button"
+        app:layout_constraintWidth_percent="0.45" />
+
+    <ImageView
+        android:id="@+id/jacket2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/smoked_white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/jacket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.45"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/jacket1"
+        app:layout_constraintTop_toBottomOf="@id/hint_button"
+        app:layout_constraintWidth_percent="0.45" />
+
+    <LinearLayout
+        android:id="@+id/buy_lives_button"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:background="@drawable/curve"
+        app:layout_constraintEnd_toEndOf="@+id/jacket1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jacket1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="BUY LIVES"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buy_hints_button"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:background="@drawable/curve"
+        app:layout_constraintEnd_toEndOf="@+id/jacket2"
+        app:layout_constraintStart_toStartOf="@+id/jacket2"
+        app:layout_constraintTop_toBottomOf="@id/jacket2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="BUY Hints"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

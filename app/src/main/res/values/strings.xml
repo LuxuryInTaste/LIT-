@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LuxuryInTaste</string>
+    <string name="click_here_to_play_the_game_now">CLICK HERE TO <font color="#FF0AE0FB">PLAY THE GAME NOW!</font></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="phone_no">Phone No.</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_register">Don\'t have an account?  <font color="#FFFFFF">Register</font></string>
+    <string name="existing_user_login">Existing user?  <font color="#FFFFFF">login</font></string>
+</resources>
